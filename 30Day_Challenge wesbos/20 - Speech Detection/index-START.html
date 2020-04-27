@@ -12,6 +12,40 @@
 <script>
   window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
+  const recoqnition = new SpeechRecognition();
+  recoqnition.interimResults = true;
+
+  let p = document.createElement('p');
+  const words = document.querySelector('.words');
+  words.appendChild(p);
+
+  recoqnition.addEventListener('result', e => {
+    // console.log(e.results);
+    const transcript = Array.from(e.results)
+      .map(result => result[0])
+      .map(result => result.transcript)
+      .join('');
+
+      if (transcript.includes("hello")){
+        console.log("HELLO WOLRD OK ThaT COoL... 🌎🌱🌱");
+        p.textContent = `${transcript} :] HELLO WORLD 🌎🌱🌱`;
+      } else {
+        p.textContent = transcript;
+      }
+      
+      if(e.results[0].isFinal){
+        p = document.createElement('p');
+        words.appendChild(p);        
+      }      
+
+    console.log(transcript);
+  });
+
+
+  recoqnition.addEventListener('end',recoqnition.start);
+
+  recoqnition.start();
+
 
 </script>
 
