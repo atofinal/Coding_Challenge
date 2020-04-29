@@ -25,10 +25,16 @@ body {
   transition: transform 0.5s;
 }
 
+.fixed-nav .site-wrap {
+  transform: scale(1);
+}
+
 header {
   text-align: center;
   height: 50vh;
-  background: url(http://wes.io/iEgP/wow-so-deep.jpg) bottom center no-repeat;
+  /* background: url(http://wes.io/iEgP/wow-so-deep.jpg) bottom center no-repeat; */
+  background: url(./seaside-pexels-by-Fabian-Wiktor.jpg) bottom center no-repeat;
+  /* background-color: #BADA55; */
   background-size: cover;
   display: flex;
   align-items: center;
@@ -49,6 +55,11 @@ nav {
   position: relative;
   z-index: 1;
 }
+/* # when active by JSscript , set fixed on top */
+.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px rgba(0,0,0,0.1);
+}
 
 nav ul {
   margin: 0;
@@ -66,12 +77,16 @@ nav li {
 }
 
 li.logo {
-  max-width: 0;
+  max-width: 0; /* ## set max-width for animate */
   overflow: hidden;
   background: white;
-  transition: all .5s;
+  transition: all .5s;  /* ## animate */
   font-weight: 600;
   font-size: 30px;
+}
+/* ## set max-width for animate when active... */
+.fixed-nav li.logo {
+  max-width: 500px; /* ## max-width for animate */
 }
 
 li.logo a {
