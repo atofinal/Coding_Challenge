@@ -40,9 +40,28 @@
   }
 </style>
 
-<button></button>
+<button>button</button>
+
 <script>
+  const divs = document.querySelectorAll('div');
+
+  function logText(e){
+    console.log(this.classList.value);
+    // console.log(this);
+
+    // e.stopPropagation(); //## stop bubbling!!
+
+  }
+
+  divs.forEach(div => div.addEventListener('click',logText,{
+    // capture: false , //## true is run function Down and false run querySelector Up , default = false
+
+    // once: true    //## true is run 1 around , default = false
+
+  }));
+
 
 </script>
+
 </body>
 </html>
