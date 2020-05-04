@@ -45,7 +45,7 @@ function displayEndTime(timestamp){
 }
 
 function startTimer(){
-    // console.log(this.dataset.time);
+    console.log(this.dataset.time,"seconds");  //## open for looking last set
     const secondsBtn = parseInt(this.dataset.time);
     timer(secondsBtn)
 }
@@ -55,7 +55,7 @@ buttons.forEach(button => button.addEventListener('click',startTimer));
 document.customForm.addEventListener('submit', function(e) {
     e.preventDefault();
     const mins = this.minutes.value;
-    // console.log(mins);
+    console.log(mins," min");  //## open for looking last set
     timer(mins * 60);
     this.reset();
 });

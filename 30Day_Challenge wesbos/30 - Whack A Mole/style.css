@@ -16,7 +16,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 10rem;
+  font-size: 9rem;
   line-height: 1;
   margin-bottom: 0;
 }
@@ -66,4 +66,10 @@ h1 {
 
 .hole.up .mole {
   top: 0;
+}
+
+.txt_start {
+  font-size: 3rem; 
+  color: white; 
+  text-align: center;  
 }
