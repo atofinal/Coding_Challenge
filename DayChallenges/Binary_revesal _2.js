@@ -1,3 +1,11 @@
+// Binary Reversal
+
+// Examples
+// Input: "213"
+// Output: 171
+// Input: "4567"
+// Output: 60296
+
 function BinaryReversal(str) { 
 
   // code goes here
@@ -16,4 +24,4 @@ function BinaryReversal(str) {
 }
 
 // keep this function call here 
-console.log(BinaryReversal(readline()));
+// console.log(BinaryReversal(readline()));

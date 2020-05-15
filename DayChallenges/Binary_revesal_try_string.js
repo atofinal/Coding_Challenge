@@ -24,4 +24,4 @@ function BinaryReversal(str) {
   }
   
   // keep this function call here 
-  console.log(BinaryReversal(readline()));
+  // console.log(BinaryReversal(readline()));
