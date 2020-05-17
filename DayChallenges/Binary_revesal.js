@@ -1,4 +1,4 @@
-// Binary Reversal
+// Binary Reversal ## coderbyte.com
 
 // Examples
 // Input: "213"
@@ -9,6 +9,7 @@
 function BinaryReversal(str) { 
 
     // code goes here
+    // ## first try
     let num = parseInt(str,10).toString(2);     
     console.log("num ",num);
     

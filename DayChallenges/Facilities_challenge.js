@@ -1,5 +1,5 @@
 
-/*
+/* ## facebook.com/PasaComputer
  * โจทย์ 
  * - หาห้องที่มีสิ่งอำนวยความสะดวก (facilities) ครบตรงกับความต้องการทั้งหมด (preferences)
  * - รีเทิร์นชื่อของห้องในรูปแบบอาเรย์ เช่น ['Deluxe', 'Super deluxe', 'Villa']
