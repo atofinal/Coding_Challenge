@@ -1,4 +1,4 @@
-// ## Single Number # https://leetcode.com/
+// ## Single Number # leetcode.com/
 
 // Example 1:
 // Input: [2,2,1]

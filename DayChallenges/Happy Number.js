@@ -1,4 +1,4 @@
-// ##Happy Number # https://leetcode.com/
+// ##Happy Number # leetcode.com/
 
 // Those numbers for which this process ends in 1 are happy numbers.
 // Return True if n is a happy number, and False if not.
