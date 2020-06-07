@@ -27,16 +27,16 @@ function isAnagram(strA, strB) {
     //     return false;
     // }
 
-    // ##style# รีโค้ดรอบสาม เพื่อเก็บรูปแบบไว้ดูในภาคหน้า
+    // ##style# รีโค้ดรอบสาม เพื่อเก็บรูปแบบไว้ดูในครั้งหน้า
     const checkAnagram = strA.length === strB.length && strA_arr.every((item,index) => item === strB_arr[index]);
     return checkAnagram;
 }
   
-  isAnagram('node', 'deno'); // รีเทิร์น true
-  isAnagram('debit card', 'bad credit'); // รีเทิร์น true
+//   isAnagram('node', 'deno'); // รีเทิร์น true
+//   isAnagram('debit card', 'bad credit'); // รีเทิร์น true
   
-  isAnagram('coding', 'coffee'); // รีเทิร์น false
-  isAnagram('java', 'javascript'); // รีเทิร์น false
+//   isAnagram('coding', 'coffee'); // รีเทิร์น false
+//   isAnagram('java', 'javascript'); // รีเทิร์น false
 
   console.log(isAnagram('node', 'deno'))
   console.log(isAnagram('debit card', 'bad credit'))
