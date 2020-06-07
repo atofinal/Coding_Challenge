@@ -10,9 +10,8 @@ function twoSum(numbers, value) {
     // เริ่มเขียน
     for (let i = 0; i < numbers.length; i++) {
       for (let x = i+1; x < numbers.length; x++) {
-        if (numbers[i] + numbers[x] === value) {
-          let [num1,num2] = [numbers.indexOf(numbers[i]), numbers.indexOf(numbers[x])];     
-          return [num1,num2];
+        if (numbers[i] + numbers[x] === value) {             
+          return [i,x];
         }
       }
     }
