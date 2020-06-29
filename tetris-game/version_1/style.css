@@ -1,0 +1,64 @@
+:root {
+    --background-box :lightgreen;
+    --border-test01: 1px solid orange;
+
+    --width-size: 300px;
+    --box-size: 30px;
+    --width-size-mini: 80px;
+    --box-size-mini: 20px;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.boxs {
+    width: var(--width-size);    
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--background-box);    
+}
+
+.boxs div {
+    width: var(--box-size);
+    height: var(--box-size);    
+    /* background-color: rgba(248, 107, 14, 0.356); */
+}
+
+.tetromino {
+    background-color: blue;    
+}
+
+.mini-boxs {
+    margin-left: 50px;
+    width: var(--width-size-mini);    
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--background-box);
+}
+
+.mini-boxs div {
+    width: var(--box-size-mini);
+    height: var(--box-size-mini);
+    /* background-color: rgba(248, 107, 14, 0.356);     */
+}
+
+.play {
+    margin-bottom: 1rem;
+    height: 2rem;
+    align-self: flex-end;
+    margin-left: 8rem;
+}
+
+.bar-footer {
+    display: none;
+    /* visibility: hidden; */
+    background-color: coral; 
+}
